@@ -1,0 +1,44 @@
+.wrapper {
+
+  @include desctop-footer;
+
+   @include cont-padding-inline;
+
+  //  flex-direction: column;
+
+
+
+  &__name {
+    // width: 200px;
+    flex-grow: 1;
+
+  }
+
+  // &__close {
+
+  //   display: grid;
+  //      @include on-desktop {
+  //   grid-column: span 6;
+  //   }
+  // }
+
+  &__address {
+
+    flex-grow: 1;
+
+  
+
+  //   outline: 2px solid blue;
+
+  //   border: solid 1px red;
+
+
+
+    // display: grid;
+    //    @include on-desktop {
+    // grid-column: span 6;
+    // }
+  }
+
+
+}

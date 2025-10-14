@@ -28,8 +28,9 @@
     />
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="../src/styles/style.scss"
     />
+
     <script
       src="scripts/main.js"
       defer
@@ -51,10 +52,15 @@
         </a>
 
         <div class="top-bar__icons">
-          <a
-            href="#"
-            class="icon icon--phone"
-          ></a>
+          <div class="top-bar__phone">
+            <span class="top-bar__phone-number">+1 234 5555-55-55</span>
+
+            <a
+              href="#"
+              class="icon icon--phone"
+            ></a>
+          </div>
+
           <a
             href="#menu"
             class="icon icon--menu"
@@ -77,12 +83,13 @@
     >
       <div class="top-bar menu__top">
         <a
-          href="#"
           class="top-bar__logo"
+          href="#"
         >
           <img
             src="images/logo/Logo.png"
             alt="Bose logo"
+            class="top-bar__logo"
           />
         </a>
 
@@ -148,16 +155,315 @@
       </div>
     </aside>
 
-    <!-- <aside class="menu" id="menu ">
-      <div class="menu__top">
-        <a href="#">
-          <img src="images/logo/Logo.png"
-         alt="Bose logo">
-        </a>
-        <a href="#" class="icon icon--close"></a>
-      </div>
-    </aside> -->
+    <main class="block">
+      <section class="title">
+        <h1 class="title__recommended">Recommended</h1>
+      </section>
 
-    <footer class="footer"></footer>
+      <div class="product">
+        <section class="recom">
+          <a href="#">
+            <img
+              src="./images/recommended/Image_Recommended (0).png"
+              class="recom__image"
+              alt="BEOSOUND A5"
+            />
+          </a>
+          <div class="content">
+            <h2 class="content__title">BEOSOUND A5</h2>
+            <p class="content__text">
+              Huge sound anywhere – in the home or outdoors. Beosound A5 is a
+              Wi-Fi and Bluetooth speaker with long-lasting battery and wireless
+              charging built in.
+            </p>
+            <p class="content__price">$ 1299.00</p>
+          </div>
+        </section>
+
+        <section class="recom">
+          <a href="#">
+            <img
+              src="./images/recommended/Image_Recommended(1).png"
+              class="recom__image"
+              alt="BEOPLAY HX"
+            />
+          </a>
+          <div class="content">
+            <h2 class="content__title">BEOPLAY HX</h2>
+            <p class="content__text">
+              Wireless noise-cancelling headphones. Listen in comfort whether
+              you're on a call, working from home or taking a moment for
+              yourself.
+            </p>
+            <p class="content__price">$ 499.00</p>
+          </div>
+        </section>
+
+        <section class="recom">
+          <a href="#">
+            <img
+              src="./images/recommended/Image_Recommended (2).png"
+              class="recom__image"
+              alt="BEOSOUND THEATRE"
+            />
+          </a>
+          <div class="content">
+            <h2 class="content__title">BEOSOUND THEATRE</h2>
+            <p class="content__text">
+              Four patent-pending acoustic innovations in one sleek soundbar
+              envelop you in sound from every angle. Made to fit any TV, and
+              last for generations.
+            </p>
+            <p class="content__price">$ 3199.00</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="product-info">
+        <p>
+          Sound. Vision.
+          <br />
+          It’s your pick.
+        </p>
+      </section>
+
+      <section class="card-info">
+        <div class="card-info__gallery">
+          <div class="card-info__top">
+            <a href="#">
+              <img
+                src="images/product/portable_speakers(1).png"
+                class="card-info__img"
+                alt="portable"
+              />
+            </a>
+          </div>
+
+          <div class="card-info__top">
+            <a href="#">
+              <img
+                src="images/product/portable_speakers(2).png"
+                class="card-info__img"
+                alt="portable"
+              />
+            </a>
+          </div>
+        </div>
+
+        <h2 class="card-info__title">Portable speakers</h2>
+      </section>
+
+      <section class="card-info">
+        <div class="card-info__gallery">
+          <div class="card-info__top">
+            <a href="#">
+              <img
+                src="images/product/arphones(1).png"
+                class="card-info__img"
+                alt="portable"
+              />
+            </a>
+          </div>
+          <div class="card-info__top">
+            <a href="#">
+              <img
+                src="images/product/earphones(2).png"
+                class="card-info__img"
+                alt="portable"
+              />
+            </a>
+          </div>
+        </div>
+        <h2 class="card-info__title">Earphones</h2>
+      </section>
+
+      <section class="card-info">
+
+        <div class="card-info__gallery">
+
+          <div class="card-info__top">
+            <a href="#">
+              <img
+                src="images/product/smart_home(1).png"
+                class="card-info__img"
+                alt="portable"
+              />
+            </a>
+          </div>
+          <div class="card-info__top">
+            <a href="#">
+              <img
+                src="images/product/smart-home(2).png"
+                class="card-info__img"
+                alt="portable"
+              />
+            </a>
+          </div>
+
+        </div>
+        <h2 class="card-info__title">Portable speakers</h2>
+      </section>
+
+      <!-- <section class="buttom">
+        <div class="view">
+          <a
+          href="#"
+          class="view__all"
+        >
+          View all
+          </a>
+        </div>
+      </section> -->
+
+
+
+      <section class="button">
+
+        <div class="button__bodi">
+
+          <div class="button__label">
+            <a
+            href="#"
+            class="button__link"
+          >
+            View all
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="photo">
+        <div class="photo__section">
+          <img
+            class="photo__img"
+            src="./images/player/player.png"
+            alt="#"
+          />
+        </div>
+      </section>
+
+      <section class="timeless">
+        <h1 class="timeless__title">Timeless, for 50 years and counting</h1>
+        <p class="timeless__text">
+          Bang & Olufsen is expanding its Recreated Classics Program with the
+          launch of Beosystems – a limited edition music system that transcends
+          time by bridging the gap between one of our iconic designs from 1972
+          and today’s cutting-edge digital technology.
+        </p>
+      </section>
+
+    </main>
+
+    <div class="these-contacts">
+
+      <section class="contact">
+
+        <h1 class="contact__title">Contact us</h1>
+      </section>
+
+      <section class="wrapper">
+        <div class="name">
+          <form
+          class="contact-bar"
+          data-qa="contact"
+          action="#"
+        >
+            <input
+            class="contact-bar__input contact-bar__input--neme"
+            type="text"
+            name="contact"
+            required
+            placeholder="Name"
+          />
+            <input
+            class="contact-bar__input contact-bar__input--email"
+            type="text"
+            name="contact"
+            required
+            placeholder="Email"
+          />
+            <textarea
+            class="contact-bar__input contact-bar__input--message"
+            name="contact"
+            rows="4"
+            required
+            placeholder="Message"
+          ></textarea>
+          </form>
+
+
+          <!-- <div class="close"> -->
+
+          <section class="button-footer">
+            <div class="button-footer__bodi">
+              <div class="button-footer__label">
+                <a
+            href="#"
+            class="button-footer__link"
+          >
+            Send
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- </div> -->
+        <div class="address">
+
+
+          <div class="footer__grid">
+
+
+            <footer class="footer">
+              <div>
+                <div class="footer__text">Phone</div>
+
+
+                <a
+            class="footer__contact"
+          href="tel:+12345555-55-55"
+        >
+          +1 234 5555-55-55
+                </a>
+              </div>
+
+
+              <div>
+                <div class="footer__text">Email</div>
+                <a
+          class="footer__contact"
+          href="mailto:hello@bang&olufsen.com"
+        >
+          hello@bang&olufsen.com
+                </a>
+              </div>
+
+              <div>
+                <div class="footer__text">Address</div>
+                <a
+          class="footer__contact"
+          href="#"
+        >
+          400 first ave.
+                  <br />
+          suite 700
+                  <br />
+          Minneapolis, MN 55401
+                </a>
+              </div>
+            </footer>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+    </div>
+
   </body>
 </html>

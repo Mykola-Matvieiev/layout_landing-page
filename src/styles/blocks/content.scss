@@ -1,0 +1,36 @@
+.content {
+
+  display: none !important;
+  font-family: Manrope, sans-serif;
+  font-style: Bold;
+  padding-inline: 20px;
+
+
+
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+
+    padding: 12px 0 40px;
+  }
+}

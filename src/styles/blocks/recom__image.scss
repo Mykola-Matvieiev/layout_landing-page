@@ -1,0 +1,16 @@
+.recom__image {
+
+  display: none !important;
+  // width: 280px;
+  // height: 481px;
+
+  max-width: 100%;
+  height: auto;
+
+  @include hover(transform, scale(1.04, 1.04));
+
+  // &__image:hover {
+  // transition: transform 0.3s ease;
+  //   transform: scale(1.1);
+  // }
+}

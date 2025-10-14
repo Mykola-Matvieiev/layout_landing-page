@@ -1,0 +1,14 @@
+.product {
+
+ 
+
+ @include on-desktop {
+ padding-inline: 120px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 24px;
+
+
+  }
+}

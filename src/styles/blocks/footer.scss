@@ -1,0 +1,60 @@
+.footer {
+  padding: 0 20px 64px;
+  // display: flex;
+  // flex-direction: column;
+  gap: 24px;
+
+  display: grid;
+
+//  @include on-desktop {
+//     grid-column: 1 / -1;
+//     }
+
+    //  @include on-desktop {
+    //   grid-column: 1 / 8;
+    // }
+
+
+     
+
+
+    //  @include page-grid;
+
+
+
+
+
+
+
+
+
+
+
+  &__text {
+    color: $footer-text-color;
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
+  }
+
+  &__contact {
+    text-decoration: none;
+    color: $footer-contakt-color;
+    font-family: Manrope, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+
+    // display: grid;
+
+    &:hover {
+      color: $footer-text-color;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// @mixin onTablet {
+//   @media (min-width: $tablet-min-width) {
+//     @content;
+//   }
+// }
+
+@mixin on-tablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin constent-padding-inline() {
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 72px;
+  }
+}
+
+
+@mixin on-desktop  {
+  @media (min-width: $on-desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin cont-padding-inline() {
+  padding-inline: 20px;
+
+  //  padding-inline: 120px;
+
+
+
+
+  @include on-desktop  {
+  padding-inline: 120px;
+
+  }
+}
+
+
+@mixin hover($property, $toValue) {
+  transition: #{$property} 0.3s;
+
+  &:hover {
+    #{$property}: $toValue;
+  }
+}
+
+  @mixin page-grid {
+   --columns:2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include on-tablet {
+    --columns:6;
+    column-gap: 24px;
+  }
+
+  @include on-desktop {
+    --columns:12;
+  }
+   }
+
+   @mixin desctop-footer {
+
+    @include on-desktop{
+
+      display: flex;
+    // justify-content: space-evenly;
+    gap: 250px;
+
+    align-items: baseline;
+
+    // width: 100%;
+
+
+    }
+
+
+   }
+
+
