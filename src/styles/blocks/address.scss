@@ -1,0 +1,7 @@
+.address {
+  grid-column: span 2;
+
+  @include on-tablet {
+    grid-column: -7 /-1;
+  }
+}

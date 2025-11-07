@@ -1,12 +1,8 @@
 .content {
-
-  display: none !important;
+  // display: none !important;
   font-family: Manrope, sans-serif;
   font-style: Bold;
   padding-inline: 20px;
-
-
-
 
   &__title {
     font-weight: 700;
@@ -30,7 +26,6 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0;
-
     padding: 12px 0 40px;
   }
 }

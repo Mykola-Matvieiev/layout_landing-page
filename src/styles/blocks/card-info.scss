@@ -1,57 +1,51 @@
 .card-info {
-
-  display: none !important;
-    row-gap: 20px;
-
-  &__gallery {
-    display: flex;
-    justify-content:space-around;
-
-  @include cont-padding-inline;
-
-
   @include on-tablet {
     padding-block: 72px;
   }
 
-   @include on-desktop  {
-  padding-inline: 120px;
+  @include on-desktop {
+    padding-inline: 120px;
   }
 
+  @include cont-padding-inline;
+
+  &__gallery {
+    @include page-grid;
+
+    margin-bottom: 16px;
   }
 
   &__top {
-    @include hover(transform, scale(1.04, 1.04));
+    @include on-tablet {
+      grid-column: span 3;
+    }
 
+    @include on-desktop {
+      grid-column: span 6;
+    }
+
+    @include hover(transform, scale(1.04, 1.04));
   }
 
   &__img {
     width: 100%;
+    object-fit: cover;
   }
 
   &__title {
-
-    font-family: Manrope sans-serif;
+    margin: 0;
     font-weight: 700;
     font-style: Bold;
     font-size: 18px;
     line-height: 140%;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 
-
-
-@include on-tablet {
-    font-family: Manrope sans-serif;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 24px;
-    line-height: 140%;
-    letter-spacing: 0px;
-}
-
-
-
-      @include cont-padding-inline;
+    @include on-tablet {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: 0;
     }
-
+  }
 }

@@ -1,15 +1,22 @@
-.timeless {
-  display: grid;
-  color: $button-send-color;
+.about {
   background-color: $timeless-background-color;
-  padding-block: 48px;
-  gap: 24px;
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+
+  // background-color: aqua;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    display: grid;
+    color: $button-send-color;
+    padding-block: 48px;
+    gap: 24px;
+
+    @include page-grid;
+  }
 
   &__container {
-    @include page-grid;
     @include cont-padding-inline;
   }
 

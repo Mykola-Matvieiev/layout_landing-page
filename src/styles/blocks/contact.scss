@@ -1,40 +1,68 @@
-  .contact {
+.contact {
+  // @include cont-padding-inline;
 
-    @include cont-padding-inline;
+  &__title {
+    margin: 0;
+    padding-block: 64px 48px;
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0;
 
-&__title {
+    @include on-tablet {
+      font-style: Bold;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0;
+    }
 
-  margin: 0;
-  padding-block: 64px 48px;
-  font-family: Manrope sans-serif;
-font-weight: 700;
-font-style: Bold;
-font-size: 32px;
-line-height: 32px;
-letter-spacing: 0px;
+    @include on-desktop {
+      font-style: Bold;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: 0;
+    }
+  }
 
-@include on-tablet {
-font-style: Bold;
-font-size: 40px;
-line-height: 100%;
-letter-spacing: 0px;
+  &__content {
+    @include page-grid;
+  }
+
+  &__info {
+    color: $footer-text-color;
+    gap: 24px;
+    display: grid;
+    padding-block: 30px 64px;
+
+    &--address,
+    &--email,
+    &--phone {
+      display: grid;
+      gap: 8px;
+    }
+
+    &--title {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: 0.15px;
+      margin: 0;
+    }
+
+    &--text {
+      text-decoration: none;
+      color: $footer-contakt-color;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.15px;
+
+      &:hover {
+        color: $footer-text-color;
+      }
+    }
+  }
 }
-
-@include on-desktop {
-
-  color:  red;
-font-style: Bold;
-font-size: 48px;
-line-height: 48px;
-letter-spacing: 0px;
-}
-
-
-}
-
-}
-
-
-
-
-

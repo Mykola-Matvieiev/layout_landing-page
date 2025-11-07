@@ -1,28 +1,22 @@
 .page {
   box-sizing: border-box;
-
-  ::-webkit-scrollbar { display: none; }
-
-  // margin: 0;
-  // padding: 0;
-
+  padding-bottom: 64px;
   font-family: Manrope, sans-serif;
   font-weight: 400;
   font-style: Regular;
   letter-spacing: 0.15px;
   color: $main-text-color;
   scroll-behavior: smooth;
-
   font-size: 16px;
   line-height: 140%;
 
-  //  color: $main-text-color;
-  //  scroll-behavior: smooth;
-  //  font-family: 'Inter', sans-serif;
+  @include on-tablet {
+    padding-bottom: 120px;
+  }
 
-
-
-
+  @include on-desktop {
+    padding-bottom: 102px;
+  }
   &__body {
     margin: 0;
     min-width: 320px;
@@ -33,7 +27,6 @@
     top: 0;
     right: 0;
     left: 0;
-
     opacity: 0;
     transition: all 0.3s;
     transform: translateX(-100%);
@@ -43,13 +36,6 @@
       opacity: 1;
       transform: translateX(0);
       pointer-events: all;
-
-  //        @include on-computer {
-  //   padding-inline: 120px;
-
-
-  // }
-
     }
   }
 }

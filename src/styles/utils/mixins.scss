@@ -18,8 +18,7 @@
   }
 }
 
-
-@mixin on-desktop  {
+@mixin on-desktop {
   @media (min-width: $on-desktop-min-width) {
     @content;
   }
@@ -28,17 +27,10 @@
 @mixin cont-padding-inline() {
   padding-inline: 20px;
 
-  //  padding-inline: 120px;
-
-
-
-
-  @include on-desktop  {
-  padding-inline: 120px;
-
+  @include on-desktop {
+    padding-inline: 120px;
   }
 }
-
 
 @mixin hover($property, $toValue) {
   transition: #{$property} 0.3s;
@@ -48,38 +40,20 @@
   }
 }
 
-  @mixin page-grid {
-   --columns:2;
+@mixin page-grid {
+  --columns: 2;
+
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
   @include on-tablet {
-    --columns:6;
+    --columns: 6;
+
     column-gap: 24px;
   }
 
   @include on-desktop {
-    --columns:12;
+    --columns: 12;
   }
-   }
-
-   @mixin desctop-footer {
-
-    @include on-desktop{
-
-      display: flex;
-    // justify-content: space-evenly;
-    gap: 250px;
-
-    align-items: baseline;
-
-    // width: 100%;
-
-
-    }
-
-
-   }
-
-
+}

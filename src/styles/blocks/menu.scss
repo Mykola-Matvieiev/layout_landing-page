@@ -1,17 +1,21 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background: #fff;
-  padding: 20px;
+  background-color: $form-bagcraund-color;
 
   &__top {
     margin-bottom: 32px;
+    top: 0;
+    z-index: 1;
+    background-color: $form-bagcraund-color;
+
+    @include on-desktop {
+      padding-inline: 120px;
+    }
 
     @include on-tablet {
       margin-bottom: 0;
     }
-
-
   }
 
   &__nav {
@@ -20,28 +24,18 @@
 
   &__content {
     @include constent-padding-inline;
-
     @include cont-padding-inline;
-
   }
-
-
-
-
-
 
   &__phone-number {
     text-decoration: none;
     color: inherit;
-
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 2px;
-
-    // vertical-align: middle;
     text-transform: uppercase;
     display: block;
     margin-bottom: 16px;
@@ -50,15 +44,12 @@
   &__call-to-order {
     text-decoration: none;
     color: inherit;
-
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-style: Bold;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 2px;
-
-    // vertical-align: middle;
     text-transform: uppercase;
     display: block;
     padding-bottom: 7px;
