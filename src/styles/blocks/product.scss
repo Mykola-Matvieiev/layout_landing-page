@@ -1,7 +1,3 @@
 .product {
   @include page-grid;
-
-  @include on-desktop {
-    padding-inline: 120px;
-  }
 }

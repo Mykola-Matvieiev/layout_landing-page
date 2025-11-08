@@ -1,18 +1,6 @@
 .card-info {
-  @include on-tablet {
-    padding-block: 72px;
-  }
-
-  @include on-desktop {
-    padding-inline: 120px;
-  }
-
-  @include cont-padding-inline;
-
   &__gallery {
     @include page-grid;
-
-    margin-bottom: 16px;
   }
 
   &__top {

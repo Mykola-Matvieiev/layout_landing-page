@@ -3,7 +3,6 @@
   display: grid;
 
   @include page-grid;
-  @include cont-padding-inline;
 
   &__bodi {
     display: flex;

@@ -1,0 +1,10 @@
+.main {
+  &__content {
+    padding: 64px 0 96px;
+
+    @media (min-width: 576px) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+}

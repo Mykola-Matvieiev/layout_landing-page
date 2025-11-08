@@ -1,11 +1,11 @@
 .recommended {
   margin: 0;
 
-  @include on-desktop {
-    padding-inline: 120px;
-  }
-
   &__title {
+    margin: 0 0 48px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 100%;
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-style: Bold;
@@ -13,10 +13,5 @@
     @include on-desktop {
       font-size: 48px;
     }
-
-    text-align: left;
-    margin: 0 0 48px;
-    font-size: 32px;
-    line-height: 100%;
   }
 }
