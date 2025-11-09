@@ -30,6 +30,11 @@
     display: none;
   }
 
+  &__phone-clic {
+    text-decoration: none;
+    color: $footer-contakt-color;
+  }
+
   .top-bar__phone {
     &:hover .top-bar__phone-number {
       opacity: 1;
