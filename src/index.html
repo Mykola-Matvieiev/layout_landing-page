@@ -185,7 +185,10 @@
           >
             <h2 class="recommended__title">Recommended</h2>
 
-            <div class="product">
+            <div
+              class="product"
+              id="all-products"
+            >
               <article class="recom">
                 <a href="#">
                   <img
@@ -332,16 +335,14 @@
               </section>
             </div>
             <section class="button">
-              <div class="button__bodi">
-                <div class="button__label">
-                  <a
-                    href="#"
-                    class="button__link"
-                  >
-                    View all
-                  </a>
+              <a
+                href="#all-products"
+                class="button__link"
+              >
+                <div class="button__bodi">
+                  <div class="button__label">View all</div>
                 </div>
-              </div>
+              </a>
             </section>
           </section>
         </div>
@@ -353,7 +354,7 @@
       >
         <img
           class="about__img"
-          src="./images/player/player.png"
+          src="./images/player/player(3).png"
           alt="#"
         />
         <div class="container">
@@ -393,7 +394,7 @@
               />
               <input
                 class="contact-bar__input contact-bar__input--email"
-                type="text"
+                type="email"
                 name="contact"
                 required
                 placeholder="Email"

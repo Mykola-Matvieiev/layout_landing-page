@@ -1,3 +1,7 @@
 .product {
+  
   @include page-grid;
+justify-content: center;
+gap: 40px 20px;
+display: grid;
 }

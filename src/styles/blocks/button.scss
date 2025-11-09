@@ -2,7 +2,6 @@
   padding: 40px 0 96px;
   display: grid;
 
-  @include page-grid;
 
   &__bodi {
     display: flex;
@@ -48,5 +47,7 @@
     line-height: 27px;
     letter-spacing: 0;
     text-align: center;
+     @include page-grid;
+
   }
 }

@@ -4,8 +4,10 @@
   justify-content: space-between;
   align-items: center;
 
+
   @include on-tablet {
     padding-block: 36px;
+    gap: 32px;
   }
 
   @include on-desktop {
@@ -56,7 +58,11 @@
 
   &__icons {
     display: flex;
-    gap: 8px;
+    gap: 24px;
+     @include on-tablet {
+    gap: 32px;
+  }
+
   }
 }
 
