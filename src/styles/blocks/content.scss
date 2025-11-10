@@ -8,6 +8,7 @@
     line-height: 140%;
     letter-spacing: 0;
     text-transform: uppercase;
+    margin: 24px 0 8px;
   }
 
   &__text {
@@ -16,6 +17,7 @@
     font-size: 14px;
     line-height: 140%;
     letter-spacing: 0.15px;
+    margin: 0;
   }
 
   &__price {
@@ -24,6 +26,6 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0;
-    padding: 12px 0 40px;
+    margin: 12px 0 0;
   }
 }
